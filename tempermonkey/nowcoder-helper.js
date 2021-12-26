@@ -29,8 +29,10 @@
             return;
         }
         // 键入数字
-        var index = parseInt(event.key);
-        if (index < 1) return;
-        a[index-1].click();
+        if(key >='0' && key <='9'){
+            var index = parseInt(event.key);
+            if (index < 1) return;
+            a[index-1].click();
+        }
     });
 })();
