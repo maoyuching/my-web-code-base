@@ -14,15 +14,21 @@
     'use strict';
 
     // Your code here...
+    // 监听键盘事件
     document.addEventListener('keydown', function (event) {
         var a = document.getElementsByClassName("subject-options");
         var key = event.key;
 
-        if(key === 'x'){
+        if(key === 'n'){
             var next = document.getElementById("next");
             next.click();
             return;
         }
+        if(key == 'N'){
+            alert("hi");
+            return;
+        }
+        // 键入数字
         var index = parseInt(event.key);
         if (index < 1) return;
         a[index-1].click();
