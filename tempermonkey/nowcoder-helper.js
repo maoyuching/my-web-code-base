@@ -28,6 +28,18 @@
             alert("hi");
             return;
         }
+        // 显示 网页头， 摸鱼模式
+        if(key === 'x'){
+            header = document.getElementsByClassName("header-main");
+            subact = document.getElementsByClassName("subject-action");
+            header[0].style.display = "none";
+            subact[0].style.display = "none";
+        }
+        if(key === 'X'){
+            header = document.getElementsByClassName("header-main");
+            header[0].style.display = "";
+        }
+
         // 键入数字
         if(key >='0' && key <='9'){
             var index = parseInt(event.key);
