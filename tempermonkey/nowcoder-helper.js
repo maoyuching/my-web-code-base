@@ -25,19 +25,26 @@
             return;
         }
         if(key == 'N'){
-            alert("hi");
+            let answing = document.getElementsByClassName("answering-num");
+           
             return;
         }
         // 显示 网页头， 摸鱼模式
         if(key === 'x'){
-            header = document.getElementsByClassName("header-main");
-            subact = document.getElementsByClassName("subject-action");
+            let header = document.getElementsByClassName("header-main");
+            let subact = document.getElementsByClassName("subject-action");
+            let footer = document.getElementsByClassName("js-nowcoder-footer"); // com-subject-wrap
             header[0].style.display = "none";
             subact[0].style.display = "none";
+            footer[0].style.display = "none";
         }
         if(key === 'X'){
-            header = document.getElementsByClassName("header-main");
+            let header = document.getElementsByClassName("header-main");
+            let subact = document.getElementsByClassName("subject-action");
+            let footer = document.getElementsByClassName("js-nowcoder-footer");
             header[0].style.display = "";
+            subact[0].style.display = "";
+            footer[0].style.display = "";
         }
 
         // 键入数字
